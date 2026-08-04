@@ -26,7 +26,7 @@ export default function BadgesRow() {
           key={index}
           src={badge.src}
           alt={badge.alt}
-          className="h-9 w-auto rounded-md shadow-xs hover:scale-105 hover:brightness-110 active:scale-98 transition-all duration-200 ease-out"
+          className="skill-badge"
           loading="lazy"
         />
       ))}

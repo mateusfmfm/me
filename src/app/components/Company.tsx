@@ -8,9 +8,9 @@ interface CompanyProps {
 
 export default function Company({ logo, name, role, time, description }: CompanyProps) {
   return (
-    <article className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-xs hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+    <article className="card">
       <div className="flex items-center gap-4">
-        <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden border border-slate-200 dark:border-slate-700 bg-white">
+        <div className="company-logo">
           <img
             src={logo}
             alt=""
@@ -21,21 +21,13 @@ export default function Company({ logo, name, role, time, description }: Company
 
         <div>
           <div className="flex items-baseline gap-2 flex-wrap">
-            <h3 className="text-xl font-bold">
-              {name}
-            </h3>
-            <span className="text-lg font-light italic text-slate-500 dark:text-slate-400">
-              {role}
-            </span>
+            <h3 className="card-title">{name}</h3>
+            <span className="company-role">{role}</span>
           </div>
-          <span className="block text-sm text-slate-400 dark:text-slate-500 mt-0.5">
-            {time}
-          </span>
+          <span className="company-time">{time}</span>
         </div>
       </div>
-      <p className="text-slate-600 dark:text-slate-400 mt-4 text-sm leading-relaxed">
-        {description}
-      </p>
+      <p className="card-body mt-4">{description}</p>
     </article>
   );
 }

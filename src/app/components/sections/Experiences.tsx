@@ -20,14 +20,10 @@ export default function Experiences() {
   const { t } = useTranslation();
 
   return (
-    <section id="experience" className="space-y-6">
-      <div className="flex flex-col space-y-2">
-        <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-          {t("experiences.title")}
-        </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm">
-          {t("experiences.description")}
-        </p>
+    <section id="experience" className="section">
+      <div className="section-header">
+        <h2 className="section-title">{t("experiences.title")}</h2>
+        <p className="section-desc">{t("experiences.description")}</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6">
