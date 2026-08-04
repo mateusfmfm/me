@@ -1,11 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './i18n'
-import App from './App.tsx'
-import './input.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { detectLanguage } from "./detectLanguage";
+import { initI18n } from "./i18n";
+import App from "./App.tsx";
+import "./input.css";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+async function bootstrap() {
+  const lng = await detectLanguage();
+  await initI18n(lng);
+
+  createRoot(document.getElementById("root")!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
+}
+
+void bootstrap();

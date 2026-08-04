@@ -9,8 +9,8 @@ export default {
   },
   intro: {
     badge: "🚀 Available for new projects",
-    title: "Software Engineer",
-    bio: "Hi, I'm Mateus Félix, a software engineer based in Santos/SP, Brazil. Passionate about learning and building software solutions.",
+    title: "I'm Mateus Félix",
+    bio: "Hi, I'm a software engineer based in Santos/SP, Brazil. Passionate about learning and building software solutions.",
   },
   skills: {
     title: "Skills",
@@ -21,7 +21,38 @@ export default {
   experiences: {
     title: "Experience",
     description: "Where I've been and what I've built throughout my professional journey.",
-    tabsPlaceholder: "[ Interactive tabs component will go here ]",
+    items: {
+      bancoBv: {
+        name: "Banco BV",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+      wowe: {
+        name: "wowe",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+      linx: {
+        name: "Linx",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+      cerc: {
+        name: "CERC",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+      viva: {
+        name: "Viva Translate",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+      headson: {
+        name: "HeadsOn",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      },
+    },
   },
   projects: {
     title: "Featured Projects",

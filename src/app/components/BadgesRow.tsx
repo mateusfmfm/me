@@ -3,8 +3,8 @@ export default function BadgesRow() {
   const badges = [
     { src: "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white", alt: "Flutter Badge" },
     { src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React Badge" },
-    { src: "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white", alt: "Angular Badge" },
     { src: "https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white", alt: "Go Badge" },
+    { src: "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white", alt: "Angular Badge" },
     { src: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white", alt: "Postgres Badge" },
     { src: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white", alt: "MongoDB Badge" },
     { src: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white", alt: "GraphQL" },
