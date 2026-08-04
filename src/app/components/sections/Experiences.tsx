@@ -5,16 +5,17 @@ import headsonLogo from "../../../assets/exp/headson.png";
 import linxLogo from "../../../assets/exp/linx.png";
 import vivaLogo from "../../../assets/exp/viva.png";
 import woweLogo from "../../../assets/exp/wowe.png";
+import { experienceIds, type ExperienceId } from "../../../data/cv";
 import Company from "../Company";
 
-const experiences = [
-  { id: "bancoBv", logo: bvLogo },
-  { id: "wowe", logo: woweLogo },
-  { id: "viva", logo: vivaLogo },
-  { id: "cerc", logo: cercLogo },
-  { id: "headson", logo: headsonLogo },
-  { id: "linx", logo: linxLogo },
-] as const;
+const logos: Record<ExperienceId, string> = {
+  bancoBv: bvLogo,
+  wowe: woweLogo,
+  viva: vivaLogo,
+  cerc: cercLogo,
+  headson: headsonLogo,
+  linx: linxLogo,
+};
 
 export default function Experiences() {
   const { t } = useTranslation();
@@ -27,14 +28,14 @@ export default function Experiences() {
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        {experiences.map((experience) => (
+        {experienceIds.map((id) => (
           <Company
-            key={experience.id}
-            logo={experience.logo}
-            name={t(`experiences.items.${experience.id}.name`)}
-            role={t(`experiences.items.${experience.id}.role`)}
-            time={t(`experiences.items.${experience.id}.time`)}
-            description={t(`experiences.items.${experience.id}.description`)}
+            key={id}
+            logo={logos[id]}
+            name={t(`experiences.items.${id}.name`)}
+            role={t(`experiences.items.${id}.role`)}
+            time={t(`experiences.items.${id}.time`)}
+            description={t(`experiences.items.${id}.description`)}
           />
         ))}
       </div>

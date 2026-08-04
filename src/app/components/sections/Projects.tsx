@@ -1,18 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { projectItems } from "../../../data/cv";
 import Project from "../Project";
-
-const projects = [
-  {
-    id: "bancoBv",
-    stacks: ["Go", "GraphQL", "Redis"],
-    icons: [] as string[],
-  },
-  {
-    id: "wowe",
-    stacks: ["Go", "Flutter", "React"],
-    icons: [] as string[],
-  },
-] as const;
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -24,13 +12,13 @@ export default function Projects() {
         <p className="section-desc">{t("projects.description")}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project) => (
+        {projectItems.map((project) => (
           <Project
             key={project.id}
             title={t(`projects.${project.id}.name`)}
             stacks={[...project.stacks]}
             description={t(`projects.${project.id}.description`)}
-            icons={[...project.icons]}
+            icons={[]}
           />
         ))}
       </div>
