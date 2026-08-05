@@ -12,6 +12,14 @@ export default {
     title: "Sou Mateus Félix",
     bio: "Olá, sou engenheiro de software localizado em Santos/SP. Apaixonado por estudos e desenvolvimento de soluções em software.",
   },
+  contacts: {
+    location: "Localização",
+    locationValue: "Santos, Brasil",
+    email: "E-mail",
+    telegram: "Telegram",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+  },
   skills: {
     title: "Skills",
     description:

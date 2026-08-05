@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import bvLogo from "../../../assets/exp/bv.png";
 import cercLogo from "../../../assets/exp/cerc.png";
@@ -6,6 +7,7 @@ import linxLogo from "../../../assets/exp/linx.png";
 import vivaLogo from "../../../assets/exp/viva.png";
 import woweLogo from "../../../assets/exp/wowe.png";
 import { experienceIds, type ExperienceId } from "../../../data/cv";
+import { sectionFade } from "../../motion";
 import Company from "../Company";
 
 const logos: Record<ExperienceId, string> = {
@@ -21,7 +23,7 @@ export default function Experiences() {
   const { t } = useTranslation();
 
   return (
-    <section id="experience" className="section">
+    <motion.section id="experience" className="section" {...sectionFade}>
       <div className="section-header">
         <h2 className="section-title">{t("experiences.title")}</h2>
         <p className="section-desc">{t("experiences.description")}</p>
@@ -39,6 +41,6 @@ export default function Experiences() {
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

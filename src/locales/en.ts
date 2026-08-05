@@ -12,6 +12,14 @@ export default {
     title: "I'm Mateus Félix",
     bio: "Hi, I'm a software engineer based in Santos/SP, Brazil. Passionate about learning and building software solutions.",
   },
+  contacts: {
+    location: "Location",
+    locationValue: "Santos, Brazil",
+    email: "Email",
+    telegram: "Telegram",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+  },
   skills: {
     title: "Skills",
     description:

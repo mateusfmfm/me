@@ -1,12 +1,14 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { projectItems } from "../../../data/cv";
+import { sectionFade } from "../../motion";
 import Project from "../Project";
 
 export default function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="section">
+    <motion.section id="projects" className="section" {...sectionFade}>
       <div className="section-header">
         <h2 className="section-title">{t("projects.title")}</h2>
         <p className="section-desc">{t("projects.description")}</p>
@@ -22,6 +24,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
