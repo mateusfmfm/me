@@ -3,11 +3,39 @@ import type { TFunction } from "i18next";
 import { experienceIds, projectItems, skillNames } from "../../data/cv";
 import CvDocument, { type CvContent } from "./CvDocument";
 
+const contactItems = [
+  {
+    id: "location",
+    href: "https://www.google.com/maps/search/?api=1&query=Santos,+Brasil",
+    valueKey: "contacts.locationValue" as const,
+  },
+  {
+    id: "email",
+    href: "mailto:mateusfmfm@outlook.com",
+    value: "mateusfmfm@outlook.com",
+  },
+  {
+    id: "telegram",
+    href: "https://t.me/mateusfmfm",
+    value: "@mateusfmfm",
+  },
+  {
+    id: "github",
+    href: "https://github.com/mateusfmfm",
+    value: "mateusfmfm",
+  },
+] as const;
+
 export function buildCvContent(t: TFunction): CvContent {
   return {
     name: "Mateus Félix",
-    title: t(""),
+    title: t("intro.title"),
     bio: t("intro.bio"),
+    contacts: contactItems.map((contact) => ({
+      label: t(`contacts.${contact.id}`),
+      value: "valueKey" in contact ? t(contact.valueKey) : contact.value,
+      href: contact.href,
+    })),
     skillsTitle: t("skills.title"),
     skills: [...skillNames],
     experiencesTitle: t("experiences.title"),

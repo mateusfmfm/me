@@ -7,6 +7,13 @@
 }
 
 @layer base {
+    html,
+    body,
+    #root {
+        min-height: 100%;
+        background-color: #f8fafc; /* slate-50 — mesma cor do page-shell */
+    }
+
     body {
         font-family: var(--font-sans);
         -webkit-font-smoothing: antialiased;

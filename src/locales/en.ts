@@ -10,7 +10,7 @@ export default {
   intro: {
     badge: "🚀 Available for new projects",
     title: "I'm Mateus Félix",
-    bio: "Hi, I'm a software engineer based in Santos/SP, Brazil. Passionate about learning and building software solutions.",
+    bio: "Hi, I'm a software developer with 10 years of experience, based in Santos, Brazil. Passionate about learning and building software solutions.",
   },
   contacts: {
     location: "Location",
@@ -21,7 +21,7 @@ export default {
     github: "GitHub",
   },
   skills: {
-    title: "Skills",
+    title: "Main skills",
     description:
       "I've had the opportunity to work with a variety of technologies throughout my career, and I'm passionate about learning. This list is always being updated.",
     tabsPlaceholder: "[ Interactive tabs component will go here ]",
@@ -58,17 +58,17 @@ export default {
         description:
           "Worked end-to-end from the start on a carbon credit web platform built with Angular.",
       },
-      linx: {
-        name: "Linx",
+      headson: {
+        name: "HeadsOn",
         role: "Fullstack Developer",
         time: "Jan/2022 - Dec/2022",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       },
-      headson: {
-        name: "HeadsOn",
+      linx: {
+        name: "Linx",
         role: "Fullstack Developer",
-        time: "Jan/2022 - Dec/2022",
+        time: "Nov/2019 - Dec/2022",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       },

@@ -10,7 +10,7 @@ export default {
   intro: {
     badge: "🚀 Disponível para novos projetos",
     title: "Sou Mateus Félix",
-    bio: "Olá, sou engenheiro de software localizado em Santos/SP. Apaixonado por estudos e desenvolvimento de soluções em software.",
+    bio: "Olá, sou desenvolvedor de software com 10 anos de experiência, localizado em Santos/SP. Apaixonado por estudos e desenvolvimento de soluções em software.",
   },
   contacts: {
     location: "Localização",
@@ -21,7 +21,7 @@ export default {
     github: "GitHub",
   },
   skills: {
-    title: "Skills",
+    title: "Principais skills",
     description:
       "Tive a oportunidade de trabalhar com uma variedade de tecnologias ao longo da minha carreira, além ser apaixonado por estudos. Portanto, essa lista está sempre sendo atualizada.",
     tabsPlaceholder: "[ Aqui vai entrar nosso componente de abas interativas ]",
@@ -58,17 +58,17 @@ export default {
         description:
           "Atuei integralmente na construção, desde o início, de uma plataforma web de crédito de carbono construída com Angular.",
       },
-      linx: {
-        name: "Linx",
+      headson: {
+        name: "HeadsOn",
         role: "Desenvolvedor Fullstack",
         time: "Jan/2022 - Dez/2022",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       },
-      headson: {
-        name: "HeadsOn",
+      linx: {
+        name: "Linx",
         role: "Desenvolvedor Fullstack",
-        time: "Jan/2022 - Dez/2022",
+        time: "Nov/2019 - Dez/2022",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       },
